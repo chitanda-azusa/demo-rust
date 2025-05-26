@@ -5,7 +5,7 @@ use axum::{
 
 use crate::handlers::hello_world::hello_world;
 
-pub mod handlers;
+pub(crate) mod handlers;
 
 #[tokio::main]
 async fn main() {
